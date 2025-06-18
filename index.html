@@ -66,33 +66,33 @@
         
         /* Hero section */
         .hero {
-            
-      background-image: url('restaurent/2b2.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    padding: 0 20px;
+            background-image: url('restaurent/2b2.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
         }
         
         .hero h1 {
-              font-size: 64px;
-              font-weight: 900;
-              color: red;
-              text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
-              margin-bottom: 20px;
+            font-size: 64px;
+            font-weight: 900;
+            color: red;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+            margin-bottom: 20px;
         }
-.hero p {
-         font-size: 20px;
-         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
+
+        .hero p {
+            font-size: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
         
         /* About section */
         .about {
@@ -395,10 +395,11 @@
         .social-links a:hover {
             background-color: #ffc107;
         }
-.social-links img {
-    object-fit: cover;
-    border-radius: 25%;
-}
+
+        .social-links img {
+            object-fit: cover;
+            border-radius: 25%;
+        }
         
         .copyright {
             text-align: center;
@@ -417,36 +418,38 @@
             cursor: pointer;
         }
         
-       .whatsapp-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    background-color: #25d366;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    font-size: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-    z-index: 99;
-    transition: transform 0.3s;
-    overflow: hidden; /* Ensures the image stays inside the circle */
-}
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #25d366;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+            z-index: 99;
+            transition: transform 0.3s;
+            overflow: hidden;
+        }
 
-.whatsapp-btn:hover {
-    transform: scale(1.1);
-}
-
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
         }
         
         /* Responsive styles */
         @media (max-width: 768px) {
             .header-container {
                 padding: 0 15px;
+            }
+            
+            .logo img {
+                height: 40px;
             }
             
             nav {
@@ -475,17 +478,242 @@
                 display: block;
             }
             
+            /* Hero section mobile fixes */
+            .hero {
+                height: 70vh;
+                padding: 0 15px;
+            }
+            
             .hero h1 {
-                font-size: 36px;
+                font-size: 28px;
+                margin-bottom: 15px;
+            }
+            
+            .hero p {
+                font-size: 16px;
+            }
+            
+            /* About section mobile */
+            .about {
+                padding: 40px 15px;
+                margin-bottom: 20px;
+            }
+            
+            .about h2 {
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+            
+            .about p {
+                font-size: 14px;
+                margin-bottom: 12px;
+            }
+            
+            /* Menu section mobile */
+            .menu {
+                padding: 20px 15px;
+            }
+            
+            .menu-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                margin-top: 20px;
+            }
+            
+            .menu-item {
+                max-width: 100%;
+            }
+            
+            .menu-item img {
+                height: 200px;
+            }
+            
+            .menu-item-info {
+                padding: 12px;
+            }
+            
+            .menu-item-info h3 {
+                font-size: 16px;
+            }
+            
+            .menu-item-info p {
+                font-size: 14px;
+            }
+            
+            /* Feature section mobile */
+            .feature {
+                padding: 40px 15px;
+                margin: 40px 0;
             }
             
             .feature-container {
                 flex-direction: column;
+                text-align: center;
             }
             
             .feature-text {
                 padding-right: 0;
                 margin-bottom: 30px;
+            }
+            
+            .feature-text h2 {
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+            
+            .feature-text p {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+            
+            .feature-image {
+                text-align: center;
+            }
+            
+            /* Quote section mobile */
+            .quote {
+                padding: 40px 15px;
+            }
+            
+            .quote h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            
+            .quote p {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+            
+            /* Franchise section mobile */
+            .franchise {
+                padding: 40px 15px;
+            }
+            
+            .franchise h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            
+            .franchise-info {
+                padding: 20px;
+            }
+            
+            .franchise-info h3 {
+                font-size: 20px;
+                margin-bottom: 12px;
+            }
+            
+            .franchise-info p {
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
+            
+            .franchise-gallery {
+                grid-template-columns: 1fr;
+                gap: 15px;
+                margin-top: 20px;
+            }
+            
+            /* Delivery section mobile */
+            .delivery {
+                padding: 40px 15px;
+            }
+            
+            .delivery h2 {
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+            
+            .delivery-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .delivery-card {
+                padding: 15px;
+            }
+            
+            .delivery-card h3 {
+                font-size: 18px;
+                margin-bottom: 8px;
+            }
+            
+            .delivery-card p {
+                font-size: 14px;
+            }
+            
+            /* Footer mobile */
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                padding: 0 15px;
+            }
+            
+            .footer-section h3 {
+                font-size: 16px;
+            }
+            
+            .footer-section p, .footer-section a {
+                font-size: 14px;
+            }
+            
+            .social-links {
+                justify-content: center;
+            }
+            
+            .copyright {
+                font-size: 12px;
+                padding-top: 20px;
+            }
+            
+            /* CTA Button mobile */
+            .cta-button {
+                padding: 10px 25px;
+                font-size: 14px;
+            }
+            
+            /* WhatsApp button mobile */
+            .whatsapp-btn {
+                width: 50px;
+                height: 50px;
+                bottom: 15px;
+                right: 15px;
+            }
+        }
+        
+        /* Extra small devices */
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 24px;
+            }
+            
+            .hero p {
+                font-size: 14px;
+            }
+            
+            .about h2 {
+                font-size: 20px;
+            }
+            
+            .feature-text h2 {
+                font-size: 20px;
+            }
+            
+            .quote h2 {
+                font-size: 20px;
+            }
+            
+            .franchise h2 {
+                font-size: 20px;
+            }
+            
+            .delivery h2 {
+                font-size: 20px;
+            }
+            
+            .menu-item img {
+                height: 180px;
             }
         }
     </style>
@@ -544,25 +772,20 @@
                 </div>
             </div>
 
-
-
- <div class="menu-item">
+            <div class="menu-item">
                 <img src="restaurent/14.png" alt="Burger">
                 <div class="menu-item-info">
                     <h3>Bucket chicken</h3>
                     <p>Delicious bucket chicken  with fresh vegetables and our special sauce.</p>
                 </div>
             </div>
- <div class="menu-item">
+            <div class="menu-item">
                 <img src="restaurent/4.jpg" alt="Burger">
                 <div class="menu-item-info">
                     <h3>Burger</h3>
                     <p>Delicious chicken burgers with fresh vegetables and our special sauce.</p>
                 </div>
             </div>
-
-
-
 
             <div class="menu-item">
                 <img src="restaurent/5.jpg" alt="Chicken Nuggets">
@@ -691,17 +914,17 @@
                 <p>Phone: 7025961726</p>
                 <p>Email: mhdnajiac@gmail.com</p>
                <div class="social-links">
-    <a href="https://www.facebook.com" target="_blank">
-        <img src="restaurent/f.jpeg" alt="Facebook" width="32" height="32" >
-    </a>
-    <a href="https://www.x.com" target="_blank">
-        <img src="restaurent/x.png" alt="X" width="32" height="32" >
-    </a>
-    <a href="https://www.instagram.com" target="_blank">
-        <img src="restaurent/i2.png" alt="Instagram" width="32" height="32" >
-    </a>
-</div>
-
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="restaurent/f.jpeg" alt="Facebook" width="32" height="32" >
+                    </a>
+                    <a href="https://www.x.com" target="_blank">
+                        <img src="restaurent/x.png" alt="X" width="32" height="32" >
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="restaurent/i2.png" alt="Instagram" width="32" height="32" >
+                    </a>
+                </div>
+            </div>
         </div>
         <div class="copyright">
             <p>&copy; 2023 Values of Chuggy Foods LLP. All Rights Reserved.</p>
@@ -710,8 +933,8 @@
 
     <!-- WhatsApp Button -->
    <a href="https://wa.me/7025961726" class="whatsapp-btn" target="_blank">
-    <img src="restaurent/w.png" alt="WhatsApp" style="width: 30px; height: 30px;">
-</a>
+        <img src="restaurent/w.png" alt="WhatsApp" style="width: 30px; height: 30px;">
+    </a>
 
     <script>
         // Mobile menu toggle
@@ -756,29 +979,3 @@
                     }
                 });
             }
-            
-            // Set initial state
-            menuItems.forEach(item => {
-                item.style.opacity = 0;
-                item.style.transform = 'translateY(20px)';
-                item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-            });
-            
-            // Check on scroll and on page load
-            window.addEventListener('scroll', checkIfInView);
-            window.addEventListener('load', checkIfInView);
-            
-            // Add animation to the hero section
-            const heroSection = document.querySelector('.hero');
-            heroSection.style.opacity = 0;
-            heroSection.style.transform = 'translateY(20px)';
-            heroSection.style.transition = 'opacity 1s ease, transform 1s ease';
-            
-            setTimeout(() => {
-                heroSection.style.opacity = 1;
-                heroSection.style.transform = 'translateY(0)';
-            }, 300);
-        });
-    </script>
-</body>
-</html>
